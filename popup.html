@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+	<link rel=stylesheet href="css/reset.css">
+	<link rel=stylesheet href="css/main.css">
+	<title>Tune Box</title>
+	<script src="js/jquery.js"></script>
+	<script src="js/php.js"></script>
+	<script src="js/postmessage.js"></script>
+	<script src="js/smoothscroll.js"></script>
+</head>
+
+<body>
+    <div class="wrap">
+        <div id="minimize"></div>
+        <div id="tags">
+            <input type="text" value="" id="search" placeholder="search.."/>
+            <a href="#">2011</a> 
+            <a href="#">ambient</a> 
+            <a href="#">blues</a> 
+            <a href="#">breaks</a> 
+            <a href="#">chillout</a> 
+            <a href="#">chillstep</a> 
+            <a href="#">drum &amp; bass</a> 
+            <a href="#">dubstep</a> 
+            <a href="#">electronic</a> 
+            <a href="#">funk</a> 
+            <a href="#">hiphop</a> 
+            <a href="#">instrumental</a> 
+            <a href="#">lounge</a> 
+            <a href="#">jazz</a> 
+            <a href="#">minimal</a> 
+            <a href="#">reggae</a> 
+            <a href="#">soul</a> 
+            <a href="#">techno</a> 
+            <a href="#">trance</a>
+            <a href="#">vocal</a>
+            
+            </div>
+        <div class="music">
+            <iframe id="player" frameborder=0 scrolling=no src="http://tunes.airy.me/flash"></iframe>
+            <div id="loader"></div>
+            <div id="playlist">
+                <p class="desc-info">
+                    Use predefined tags on the left or provide your own in the search box on the left top. 
+                    List of latest sets of selected genre will be loaded from SoundCloud.<br><br>
+                    First 50 results are loaded, other can be fetched by pressing 'Load more tracks' link.
+                    You can listen to any set by pressing on the title.<br><br>
+                    Player on the top is used to play sets, you can pause or fast-forward to desired position within a mix.</p>
+                
+            </div>
+            <div id="actions"></div>
+        </div>
+    </div>
+    <div id="main_loader"></div>
+
+<div class="hide">
+	<div id="dialog"></div>
+	<div id="dialog-confirm"></div>
+</div>
+<script src="js/helpers.js"></script>
+<script src="js/interface.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

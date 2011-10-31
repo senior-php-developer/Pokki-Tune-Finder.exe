@@ -1,0 +1,174 @@
+body, html  {color: #333;  margin: 0; padding: 0; font-family: Helvetica, Verdana, sans-serif;}
+html {overflow-y: scroll;}
+body {background:  #EEEBD5;}
+
+.wrap {width: 600px; height: 490px;}
+#minimize {background: url(../img/minimize.png) no-repeat 0 0; width: 22px; height: 13px; position: absolute; right: 0px; cursor: pointer;}
+#minimize:hover {background: url(../img/minimize-over.png) no-repeat 0 0;}
+
+h1 { display: block;  text-indent: -9999px;  font-size: 0;  width: 103px;  height: 31px;  margin: auto;  margin-bottom: 30px;  background: url(../img/soundlite.png) no-repeat;}
+
+#header {background: url('../img/headphones.jpg') no-repeat 0 0 #f9f9f9; height: 209px; border-bottom: 1px solid #bbb; position: fixed; top: 0; width: 100%; z-index: 10;}
+
+#logo{float:right; background: url('../img/logo.png') no-repeat; height: 56px; margin-top: 10px; width: 285px;}
+
+ul{  font-size: 11px;  list-style: none;  margin: 0;  padding: 0;}
+li{  clear: both;  height: 1.4em;  padding: 0.4em 1em;}
+a, a:visited, a:focus, a:hover, a:active{  color: #999;  text-decoration: none;}
+a:hover{  color: #333;}
+a:active, a:focus {  outline: none;}
+.selected a{  color: #333;}
+input{  border-radius: 6px;  border: 1px solid #bbb;  padding: 2px;}
+input:hover, input:focus{  border: 1px solid #999;}
+label{  color: #bbb;  font-size: 11px;  text-transform: uppercase;}
+
+
+/***************
+ * SEARCH AREA *
+ ***************/
+
+
+#tags {position: fixed; float:left; width: 93px; font-size: 10px; padding: 10px; text-align: center; text-transform: uppercase;}
+#tags a {line-height: 1.8em; display: block;}
+
+#tags #search {width: 100%; font-size: 11px; margin-bottom: 10px; padding: 3px 5px;}
+
+/**************
+ * MUSIC AREA *
+ **************/
+
+.desc-info {font-size: 13px; line-height: 20px;margin: 15px;} 
+
+.music {float: right; width: 480px;}
+#player {width: 460px; height: 70px; margin-top: 10px;}
+#playlist {clear: both;  height: 375px;  overflow: auto;}
+
+#ribbon, #container, #footer{
+  opacity: 0;
+}
+
+#toggler{
+  font-size: 10px;
+  position: absolute;
+  right: 4px;
+  text-transform: uppercase;
+  top: 5px;
+}
+
+.search_options label{
+  clear: both;
+  display: block;
+  margin: 10px auto;
+  width: 50%;
+}
+
+.search_options label select{
+  display: block;
+  float: right;
+  margin-top: -4px;
+  width: 140px;
+}
+
+#toggler a {
+  background: #ebebeb;
+  padding: 3px;
+  padding-top: 5px;
+}
+
+#container, #footer{
+  margin: auto;
+  width: 700px;
+}
+
+#container {margin-top: 209px; background: rgba(255,255,255,0.75); border: 1px solid #ccc; position: relative;}
+
+#footer{
+  color: #aaa;
+  font-size: 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#main_loader{
+  background: url(../img/loader.gif) no-repeat;
+  height: 30px;
+  position: absolute;
+  width: 30px;
+  left: 49%;
+  top: 220px;
+}
+
+#loader{
+  background: url(../img/loader.gif) no-repeat;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+    top: 26px;
+    left: 560px;
+}
+
+#actions{
+  font-size: 10px;
+  padding: 7px;
+  text-align: center;
+}
+
+#tag_search{
+  display: block;
+  margin-left: 222px;
+}
+
+.search_options{
+  padding-top: 20px;
+}
+
+.left, .right{
+  display: block;
+  height: 1em;
+  overflow: hidden;
+  margin-top: 2px;
+}
+
+.right{
+  display: none;
+}
+.left{
+  float: left;
+  width: 100%;
+}
+.odd{
+  background: #eee;
+}
+
+.selected{
+  background: #eb956a;
+}
+
+.sc-player{float:right; margin-top: 5px; position: relative; clear: right; width: 450px; height:}
+
+.loading{
+  display: none;
+  visibility: hidden;
+}
+
+/****
+ * Scrollbars
+ */
+/* Custom CSS scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    border-radius: 3px;
+    background: none;
+}
+::-webkit-scrollbar-track:vertical { 
+    background: none; 
+}
+::-webkit-scrollbar-thumb {
+    width: 8px; height: 20px;
+    background: #555;
+    border-radius: 3px;
+}
+::-webkit-scrollbar-button: { 
+    display: none; 
+}
